@@ -1,10 +1,13 @@
 #include <iostream>
+#include <vector>
 #include "YearObject.h"
 
 int main(int argc, char const *argv[])
 {
+    std::vector<YearObject> yearEntries;
     unsigned userNum = 0;
     unsigned userYear = 0;
+
 
     std::cout << "BUDGET MANAGER" << std::endl;
     std::cout << "Select an option: " << std::endl;
@@ -25,7 +28,14 @@ int main(int argc, char const *argv[])
         {
             //error, out of bounds
         }
-        //check if year exists
+        for(unsigned i = 0; i < yearEntries.size(); ++i)
+        {
+            if(yearEntries.at(i).getYearNum() == userYear)
+            {
+                //year already exists!
+            }
+        }
+        //yearEntries.push_back(new YearObject(userYear))
 
         //else, create new YearObject
 

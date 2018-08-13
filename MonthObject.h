@@ -15,6 +15,7 @@ class MonthObject
 
     public:
     MonthObject();
+    void setName(std::string name);
 
     /*addEntry();
     removeEntry();
