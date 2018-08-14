@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include "YearObject.h"
+#include "MoneyObject.h"
+#include "MonthObject.h"
 
 int main(int argc, char const *argv[])
 {
@@ -28,13 +30,15 @@ int main(int argc, char const *argv[])
         {
             //error, out of bounds
         }
-        for(unsigned i = 0; i < yearEntries.size(); ++i)
+        for(int i = 0; i < yearEntries.size(); ++i)
         {
             if(yearEntries.at(i).getYearNum() == userYear)
             {
                 //year already exists!
             }
         }
+        //create a new year
+
         //yearEntries.push_back(new YearObject(userYear))
 
         //else, create new YearObject

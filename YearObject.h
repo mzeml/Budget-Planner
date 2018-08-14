@@ -9,12 +9,13 @@
 class YearObject 
 {
     private:
-        unsigned yearNum;
+        int yearNum;
         std::vector<MonthObject> monthEntries;
+        std::string monthArray[12] = {"January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
     public:
         YearObject();
-        unsigned getYearNum();
+        int getYearNum();
         //outputYear(); //Displays the month of the year with a total of expenses, incomes, and net loss/gain
 };
 
