@@ -15,6 +15,7 @@ class YearObject
 
     public:
         YearObject();
+        YearObject(int yearInput);
         int getYearNum();
         //outputYear(); //Displays the month of the year with a total of expenses, incomes, and net loss/gain
 };

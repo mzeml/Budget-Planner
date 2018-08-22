@@ -11,3 +11,7 @@ void MonthObject::setName(std::string name)
 {
     monthName = name;
 }
+std::string MonthObject::getName()
+{
+    return monthName;
+}
